@@ -24,7 +24,9 @@ The agent can take two actions: move the cart to the left or move it to the righ
 
 # ALE/Pong-v5
 The ALE Pong-v5 environment, also provided by OpenAI's Gymnasium, emulates the game of Pong, where two players control paddles on opposite sides of the screen, attempting to hit a ball back and forth. The objective in this environment is to control one of the paddles to successfully hit the ball and prevent it from passing the other paddle.
+
 The state space in ALE Pong-v5 typically consists of the raw pixel values of the game screen, representing the visual information perceived by the agent, represented as Box(0, 255, (210, 160,3), uint8), where the pixel values are [0-255] and 3 channels of 210 by 160 frames.  The actions available to the agent usually include moving the paddle up or down to control its position.
+
 The action space in ALE Pong-v5 offers 6 discrete actions, including NOOP (No operation), FIRE (unused), RIGHT, LEFT, RIGHTFIRE (equivalent to action 2), and LEFTFIRE (equivalent to action 3). Notably, only actions 2/4 (RIGHT) and 3/5 (LEFT) induce movement in the agent.
 
 You can read more in our complete pdf document attached.
